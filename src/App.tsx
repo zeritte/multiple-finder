@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import NumberButton from "./components/NumberButton";
 
-const MAX_NUMBER = 144;
+export const MAX_NUMBER = 144;
 const NUMBERS_ARRAY = [...Array(MAX_NUMBER + 1).keys()].slice(1);
 
 function App() {
