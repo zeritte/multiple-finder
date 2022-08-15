@@ -21,8 +21,8 @@ function App() {
   };
 
   return (
-    <main className="main">
-      <div className="container">
+    <main className="main" data-testid="main">
+      <div className="container" data-testid="container">
         {NUMBERS_ARRAY.map((number) => (
           <NumberButton
             key={number}

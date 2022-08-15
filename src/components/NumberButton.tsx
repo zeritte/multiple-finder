@@ -18,6 +18,7 @@ export default function NumberButton({
                 ${isSelected ? "highlight-selected" : ""}
                 ${isInMultiples ? "highlight-multiple" : ""}`}
       key={number}
+      data-testid={`select-number-${number}`}
     >
       {number}
     </button>
