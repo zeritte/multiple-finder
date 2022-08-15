@@ -1,25 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import NumberButton from "./components/NumberButton";
+
+const MAX_NUMBER = 144;
+const NUMBERS_ARRAY = [...Array(MAX_NUMBER + 1).keys()].slice(1);
 
 function App() {
+  const [selectedNumber, setSelectedNumber] = useState<number>();
+  const [multiples, setMultiples] = useState<number[]>([]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main">
+      <div className="container">
+      </div>
+    </main>
   );
 }
 
