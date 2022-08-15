@@ -1,9 +1,9 @@
-.wrapper {
+.main {
   display: flex;
   justify-content: center;
 }
 
-.main {
+.container {
   display: inline-grid;
   grid-gap: 30px;
   padding: 20px;
@@ -11,7 +11,7 @@
 
 /* Desktop only */
 @media all and (min-width: 850px) {
-  .main {
+  .container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
   }
@@ -19,7 +19,7 @@
 
 /* Tablet devices only */
 @media all and (max-width: 850px) and (min-width: 430px) {
-  .main {
+  .container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
@@ -27,7 +27,7 @@
 
 /* Mobile devices */
 @media all and (max-width: 430px) {
-  .main {
+  .container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
@@ -38,7 +38,7 @@
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  font-size: 30px;
+  font-size: 50px;
   width: 150px;
   height: 150px;
   background-color: transparent;
